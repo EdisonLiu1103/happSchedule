@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <ScrollView
+        android:id="@+id/scrollPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/schooltimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="设置时间表"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <TableRow
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/week_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="星期\n课次"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="一"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="二"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="三"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="四"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wek"
+                    android:gravity="center"
+                    android:text="五"
+                    android:textColor="#ffffff"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="1-2"/>
+
+                <Button
+                    android:id="@+id/mon_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="3-4"/>
+
+                <Button
+                    android:id="@+id/mon_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="5-6"/>
+
+                <Button
+                    android:id="@+id/mon_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="7-8"/>
+
+                <Button
+                    android:id="@+id/mon_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="9-10"/>
+
+                <Button
+                    android:id="@+id/mon_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="11-12"/>
+
+                <Button
+                    android:id="@+id/mon_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="13-14"/>
+
+                <Button
+                    android:id="@+id/mon_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/eighth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_classnumber"
+                    android:gravity="center"
+                    android:text="15-16"/>
+
+                <Button
+                    android:id="@+id/mon_eighth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/tuesday_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/wednesday_eighth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/thursday_eighth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+
+                <Button
+                    android:id="@+id/friday_eighth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_def"
+                    android:text=""
+                    android:textSize="10px"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/weekend">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#848284">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置课程"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期六"
+                    android:layout_marginLeft="20dip"
+                    android:id="@+id/std_add"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sun_add"
+                    android:text="星期日"/>
+
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/weekendlist"
+                android:visibility="gone">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/plan">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#848284">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提醒内容"
+                    android:textColor="#ffffff"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remindcontent"
+                    android:width="180dip"
+                    android:hint="学习，运动计划"
+                    android:layout_marginRight="20dip"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加"
+                    android:id="@+id/addplan"/>
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
