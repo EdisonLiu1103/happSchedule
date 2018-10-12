@@ -126,22 +126,40 @@ public class tab extends TabActivity {
     private int wed_eighth_id;
 
     //thursday cName id
-    private String mon_first_cName;
-    private int mon_first_id;
-    private String mon_second_cName;
-    private int mon_second_id;
-    private String mon_third_cName;
-    private int mon_third_id;
-    private String mon_fourth_cName;
-    private int mon_fourth_id;
-    private String mon_fifth_cName;
-    private int mon_fifth_id;
-    private String mon_sixth_cName;
-    private int mon_sixth_id;
-    private String mon_seventh_cName;
-    private int mon_seventh_id;
-    private String mon_eighth_cName;
-    private int mon_eighth_id;
+    private String thu_first_cName;
+    private int thu_first_id;
+    private String thu_second_cName;
+    private int thu_second_id;
+    private String thu_third_cName;
+    private int thu_third_id;
+    private String thu_fourth_cName;
+    private int thu_fourth_id;
+    private String thu_fifth_cName;
+    private int thu_fifth_id;
+    private String thu_sixth_cName;
+    private int thu_sixth_id;
+    private String thu_seventh_cName;
+    private int thu_seventh_id;
+    private String thu_eighth_cName;
+    private int thu_eighth_id;
+
+    //Friday cName id
+    private String fri_first_cName;
+    private int fri_first_id;
+    private String fri_second_cName;
+    private int fri_second_id;
+    private String fri_third_cName;
+    private int fri_third_id;
+    private String fri_fourth_cName;
+    private int fri_fourth_id;
+    private String fri_fifth_cName;
+    private int fri_fifth_id;
+    private String fri_sixth_cName;
+    private int fri_sixth_id;
+    private String fri_seventh_cName;
+    private int fri_seventh_id;
+    private String fri_eighth_cName;
+    private int fri_eighth_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -250,6 +268,206 @@ public class tab extends TabActivity {
                 mon_eighth_id = cursor.getInt(cursor.getColumnIndex("id"));
                 mon_eighth.setText(base.cutCourseName(mon_eighth_cName));
                 mon_eighth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+
+            //星期二
+            if(strWeek.equals("二") && strWhichLesson.equals("1-2")){
+                tus_first_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_first_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_first.setText(base.cutCourseName(tus_first_cName));
+                tus_first.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("3-4")){
+                tus_second_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_second_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_second.setText(base.cutCourseName(tus_second_cName));
+                tus_second.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("5-6")){
+                tus_third_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_third_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_third.setText(base.cutCourseName(tus_third_cName));
+                tus_third.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("7-8")){
+                tus_fourth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_fourth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_fourth.setText(base.cutCourseName(tus_fourth_cName));
+                tus_fourth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("9-10")){
+                tus_fifth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_fifth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_fifth.setText(base.cutCourseName(tus_fifth_cName));
+                tus_fifth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("11-12")){
+                tus_sixth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_sixth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_sixth.setText(base.cutCourseName(tus_sixth_cName));
+                tus_sixth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("13-14")){
+                tus_seventh_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_seventh_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_seventh.setText(base.cutCourseName(tus_seventh_cName));
+                tus_seventh.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("二") && strWhichLesson.equals("15-16")){
+                tus_eighth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                tus_eighth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                tus_eighth.setText(base.cutCourseName(tus_eighth_cName));
+                tus_eighth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+
+            //星期三
+            if(strWeek.equals("三") && strWhichLesson.equals("1-2")){
+                wed_first_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_first_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_first.setText(base.cutCourseName(wed_first_cName));
+                wed_first.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("3-4")){
+                wed_second_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_second_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_second.setText(base.cutCourseName(wed_second_cName));
+                wed_second.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("5-6")){
+                wed_third_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_third_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_third.setText(base.cutCourseName(wed_third_cName));
+                wed_third.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("7-8")){
+                wed_fourth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_fourth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_fourth.setText(base.cutCourseName(wed_fourth_cName));
+                wed_fourth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("9-10")){
+                wed_fifth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_fifth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_fifth.setText(base.cutCourseName(wed_fifth_cName));
+                wed_fifth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("11-12")){
+                wed_sixth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_sixth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_sixth.setText(base.cutCourseName(wed_sixth_cName));
+                wed_sixth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("13-14")){
+                wed_seventh_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_seventh_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_seventh.setText(base.cutCourseName(wed_seventh_cName));
+                wed_seventh.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("三") && strWhichLesson.equals("15-16")){
+                wed_eighth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                wed_eighth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                wed_eighth.setText(base.cutCourseName(wed_eighth_cName));
+                wed_eighth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+
+            //星期四
+            if(strWeek.equals("四") && strWhichLesson.equals("1-2")){
+                thu_first_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_first_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_first.setText(base.cutCourseName(thu_first_cName));
+                thu_first.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("3-4")){
+                thu_second_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_second_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_second.setText(base.cutCourseName(thu_second_cName));
+                thu_second.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("5-6")){
+                thu_third_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_third_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_third.setText(base.cutCourseName(thu_third_cName));
+                thu_third.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("7-8")){
+                thu_fourth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_fourth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_fourth.setText(base.cutCourseName(tus_fourth_cName));
+                thu_fourth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("9-10")){
+                thu_fifth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_fifth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_fifth.setText(base.cutCourseName(thu_fifth_cName));
+                thu_fifth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("11-12")){
+                thu_sixth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_sixth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_sixth.setText(base.cutCourseName(thu_sixth_cName));
+                thu_sixth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("13-14")){
+                thu_seventh_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_seventh_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_seventh.setText(base.cutCourseName(thu_seventh_cName));
+                thu_seventh.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("四") && strWhichLesson.equals("15-16")){
+                thu_eighth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                thu_eighth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                thu_eighth.setText(base.cutCourseName(thu_eighth_cName));
+                thu_eighth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+
+            //星期五
+            if(strWeek.equals("五") && strWhichLesson.equals("1-2")){
+                fri_first_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_first_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_first.setText(base.cutCourseName(fri_first_cName));
+                fri_first.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("3-4")){
+                fri_second_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_second_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_second.setText(base.cutCourseName(fri_second_cName));
+                fri_second.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("5-6")){
+                fri_third_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_third_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_third.setText(base.cutCourseName(fri_third_cName));
+                fri_third.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("7-8")){
+                fri_fourth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_fourth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_fourth.setText(base.cutCourseName(fri_fourth_cName));
+                fri_fourth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("9-10")){
+                fri_fifth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_fifth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_fifth.setText(base.cutCourseName(fri_fifth_cName));
+                fri_fifth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("11-12")){
+                fri_sixth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_sixth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_sixth.setText(base.cutCourseName(fri_sixth_cName));
+                fri_sixth.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("13-14")){
+                fri_seventh_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_seventh_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_seventh.setText(base.cutCourseName(fri_seventh_cName));
+                fri_seventh.setBackgroundResource(R.drawable.bg_alarm);
+            }
+            else if(strWeek.equals("五") && strWhichLesson.equals("15-16")){
+                fri_eighth_cName = cursor.getString(cursor.getColumnIndex("cName"));
+                fri_eighth_id = cursor.getInt(cursor.getColumnIndex("id"));
+                fri_eighth.setText(base.cutCourseName(fri_eighth_cName));
+                fri_eighth.setBackgroundResource(R.drawable.bg_alarm);
             }
         }
     }
