@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".tab">
         </activity>
+        <activity android:name=".courseinfo">
+        </activity>
     </application>
 
 </manifest>
